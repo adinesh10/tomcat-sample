@@ -6,7 +6,7 @@ pipeline {
     
 				stage('cleanup tomcat app') {      		    			
                     steps {			                                			
-                        sh 'rm -rf ${TOMCAT_HOME}/webapps/sample*'  
+                        sh 'rm -rf /opt/tomcat/webapps/sample*'  
                     }			
                 }
 				
