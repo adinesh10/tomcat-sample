@@ -6,7 +6,7 @@ pipeline {
     
 				stage('cleanup tomcat app') {      		    			
                     steps {			                                			
-                        sh 'rm -rf /opt/tomcat/webapps/sample*'  
+                        sh 'runuser -l ec2-user -c 'rm -rf /opt/tomcat/webapps/sample*''
                     }			
                 }
 				
